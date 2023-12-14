@@ -16,15 +16,17 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: ofek18100/naturewallfrontend:0.2
+        image: ofek18100/naturewallfrontend:0.4
         ports:
         - containerPort: 80
         resources:
-          requests:
-            cpu: 100m
-            memory: 200Mi
           limits:
-            memory: 300Mi
+            memory: 900Mi
+            cpu: 2
+          requests:
+            cpu: 500m
+            memory: 700Mi
+
         env:
           - name: ENV
             value: "CIVO2"
