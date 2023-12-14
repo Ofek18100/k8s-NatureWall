@@ -13,3 +13,8 @@ def read_root(request: Request):
     context = {"request": request}
     return templates.TemplateResponse("index.html", context)
 
+
+@app.get("/contact", response_class=HTMLResponse)
+def read_contact(request: Request):
+    context = {"request": request}
+    return templates.TemplateResponse("contact.html", context)

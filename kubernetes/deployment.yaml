@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: ofek18100/naturewallfrontend:0.4
+        image: ofek18100/naturewallfrontend:0.5
         ports:
         - containerPort: 80
         resources:
